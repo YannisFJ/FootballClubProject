@@ -5,6 +5,27 @@ body {
     padding-top: 50px;
 }
 
+/**UTILITY**/
+
+.text-left {
+    text-align: left
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.section-header {
+    text-shadow: px 7px blue;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 5em;
+}
+
+.secondary-header {
+    font-family: 'Exo';
+}
+
 /** Navbar **/
 
 .navbar-brand {
@@ -43,6 +64,8 @@ body {
     color: #E754CA !important;
 }
 
+
+
 .news-container {
     height: 80vh;
     background: url('../images/ball.jpg') no-repeat center center fixed;
@@ -60,4 +83,10 @@ body {
     left: 10px;
     border-radius: 5%;
     width: 35vw;
+}
+
+
+/**TICKET SECTION**/
+.container-wrapper-yellow {
+    background-color: gold;
 }
