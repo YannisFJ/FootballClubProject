@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+}
+
+/** Navbar **/
+
+.navbar-brand {
+    position: relative;
+    background: url(../images/clublogo.png) center center;
+    background-repeat: no-repeat;
+    width: 65px;
+    left: 15px;
+    background-size: contain;
+    margin-right: 5vw;
+}
+
+.navbar-inverse {
+    margin-bottom: 0px;
+}
+
+/**CAROUSEL**/
+
+.carousel-inner {
+    max-width: 40vh;
+    max-height: 30vh;
+}
+
+
+/**SOCIAL MEDIA ICON COLOR**/
+
+.fa-twitter-square {
+    color: #10CFFE !important;
+}
+
+.fa-facebook-square {
+    color: #3C5A99 !important;
+}
+
+.fa-instagram {
+    color: #E754CA !important;
+}
+
+.news-container {
+    height: 80vh;
+    background: url('../images/ball.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.jumbotron {
+    left: 10px;
+    border-radius: 5%;
+    width: 35vw;
+}
