@@ -26,6 +26,11 @@ body {
     font-family: 'Exo';
 }
 
+.ticket-button {
+    font-family: 'Exo';
+    text-transform: uppercase;
+}
+
 /** Navbar **/
 
 .navbar-brand {
@@ -66,8 +71,8 @@ body {
 
 
 
-.news-container {
-    height: 80vh;
+.intro-container {
+    height: 70vh;
     background: url('../images/ball.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -80,8 +85,9 @@ body {
 }
 
 .jumbotron {
-    left: 10px;
-    border-radius: 5%;
+    position: relative;
+    left: 0px;
+    border-radius: 2%;
     width: 35vw;
 }
 
@@ -89,4 +95,8 @@ body {
 /**TICKET SECTION**/
 .container-wrapper-yellow {
     background-color: gold;
+}
+
+.thumbnail {
+    text-align: center;
 }
