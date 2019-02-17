@@ -16,14 +16,17 @@ body {
 }
 
 .section-header {
-    text-shadow: px 7px blue;
-    font-family: 'Roboto';
+    text-shadow: 1px 1px grey;
+    font-family: 'Oswald';
     font-weight: 500;
     font-size: 5em;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .secondary-header {
     font-family: 'Exo';
+    margin-top: 0px;
 }
 
 .ticket-button {
@@ -93,10 +96,44 @@ body {
 
 
 /**TICKET SECTION**/
-.container-wrapper-yellow {
+.container-wrapper-gold {
     background-color: gold;
 }
 
 .thumbnail {
     text-align: center;
+}
+
+.ticket-header {
+    display: inline-block;
+}
+
+/**HISTORY***/
+
+.history-container {
+    height: 80vh;
+    background: url('../images/corner.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+/*****VIDEOS*****/
+
+.video-container {
+    height: 80vh;
+    background: url('../images/corner.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
 }
