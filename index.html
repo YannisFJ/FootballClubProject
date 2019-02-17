@@ -10,8 +10,8 @@
         <meta name="keywords" content="tickets, highlights, news, squad, Institute FC">
         <!--Styling-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
 	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,500" rel="stylesheet">
     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     </head>
@@ -28,7 +28,7 @@
                         <span class="icon-bar"></span>
                    </button>
                    <!-- **link href to top section of page**-->
-                    <a class="navbar-brand" href="#"></a>
+                    <a class="navbar-brand" href="#" style="font-family: 'Oswald'; color: gold;">LOGO</a>
                </div>
                
                <!--Links for toggling-->
@@ -48,11 +48,12 @@
                                <li id="fb-color"><a href="#" class="facebook-color"><i class="fab fa-facebook-square"></i><strong>&nbsp Facebook</strong></a></li>
                            </ul>
                        </li>
-                       <li><a href="#">Tickets</a></li>
-                       <li><a href="#">Highlights</a></li>
+                       <li><a href="#ticket-head">Tickets</a></li>
+                       <li><a href="#highlight-head">Highlights</a></li>
                    </ul>
                    <!--Searchbar with search Icon-->
                    <form class="navbar-form navbar-right">
+                       <button class="btn btn-defeault btn-warning btn--cta" data-toggle='modal' data-target="#signupmodal">Sign Up!</button>
                        <div class="form-group">
                            <input type="text" class="form-control" placeholder="Search"/>
                        </div>
@@ -66,25 +67,23 @@
        <div class="intro-container">
            <div class="row">
                <div class="col-xs-12">
-                   <!--
-                   <section class="homepage jumbotron">
-                       <h1> <strong> Header </strong> </h1>
-                       <hr class="block-divider">
-                       <p class="lead"> News </p>
+                   <section class="jumbotron">
+                       <p class="lead news-header uppercase">'We knew the title race would go down to the wire' </p>
+                       <h1 class="section-header page-header"> <strong> News </strong> </h1>
                    </section>
-                   -->
                </div>
            </div>
        </div>
        
-       <!--TICKETS-->
-    <div class="container-wrapper container-wrapper-gold">
+    <!--TICKETS-->
+    <div id="ticket-head" class="container-wrapper container-wrapper-gold ticket-wrapper">
         <div class="container">
             <section class="tickets">
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="page-header">
-                            <h2 class="section-header ticket-header">Upcoming matches</h2>
+                            <h2 id="ticket-h2" class="section-header">Tickets</h2> &nbsp
+                          <span class="label label-default">Upcoming Matches</span>
                         </div>
                     </div>
                 </div>
@@ -105,7 +104,7 @@
                     <div class="thumbnail">
                       <img src="assets/images/stadium.jpg" alt="stadium picture">
                       <div class="caption">
-                        <h3>intertheNET vs Institute FC</h3>
+                        <h3>Institute FC vs intertheNET</h3>
                         <h4><small>EFL CUP</small></h4>
                         <p>...</p>
                         <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>tickets</strong></a></p>
@@ -126,30 +125,88 @@
             </section>
         </div>
     </div>
-        
-        <!--HISTORY-->
-        <div class="history-container">
-           <div class="row">
-               <div class="col-xs-12">
-                   <!--
-                   <section class="homepage jumbotron">
-                       <h1> <strong> Header </strong> </h1>
-                       <hr class="block-divider">
-                       <p class="lead"> News </p>
-                   </section>
-                   -->
-               </div>
-           </div>
-       </div>
-       
-       <!--VIDEOS-->
-       <div class="container-wrapper container-wrapper-gold">
+    
+    <!--VIDEO HIGHLIGHTS-->
+    <div id="highlight-head" class="container-wrapper container-wrapper-grey highlight-wrapper">
         <div class="container">
-            <section class="tickets">
+            <section class="highlights">
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="page-header">
-                            <h2 class="section-header ticket-header">Highlights</h2>
+                            <h2 id="highlight-h2" class="section-header">Video Highlights</h2> &nbsp
+                          <span class="label label-default">Upcoming Matches</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ticket panels-->
+                <div class="row row-table">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="thumbnail">
+                      <img src="assets/images/passing.jpg" alt="match photo">
+                      <div class="caption">
+                        <h3>Institute FC vs Bootstrap City</h3>
+                        <h4><small>Premier League</small></h4>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>tickets</strong></a></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="thumbnail">
+                      <img src="assets/images/stadium.jpg" alt="stadium picture">
+                      <div class="caption">
+                        <h3>Institute FC vs intertheNET</h3>
+                        <h4><small>EFL CUP</small></h4>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>tickets</strong></a></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <img src="assets/images/team.jpg" alt="team photo">
+                      <div class="caption">
+                        <h3>Institute FC vs CSS Wanderers</h3>
+                        <h4><small>Premier League</small></h4>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>tickets</strong></a></p>
+                      </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <!-- SUBSCRIBE-->
+    <div class="subscribe subscribe-container container-wrapper container-wrapper-gold">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h3><span class="glyphicon glyphicon-envelope"></span>&nbsp<span class="uppercase">Subscribe to our official club newsletter</span></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your best email!" class="form-control"/>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Subscribe</button>
+                    </form>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--HISTORY-->
+    <div id="highlight-head" class="container-wrapper container-wrapper-grey highlight-wrapper">
+        <div class="container">
+            <section class="highlights">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <h2 id="highlight-h2" class="section-header">Club History</h2> &nbsp
                         </div>
                     </div>
                 </div>
@@ -157,7 +214,7 @@
                 <div class="row">
                   <div class="col-sm-6 col-md-6">
                     <div class="thumbnail">
-                      <img src="" alt="match photo">
+                      <img src="assets/images/ball.jpg" alt="match photo">
                       <div class="caption">
                         <h3>Institute FC vs Bootstrap City</h3>
                         <h4><small>Premier League</small></h4>
@@ -168,9 +225,9 @@
                 </div>
                 <div class="col-sm-6 col-md-6">
                     <div class="thumbnail">
-                      <img src="" alt="stadium picture">
+                      <img src="assets/images/stadium.jpg" alt="stadium picture">
                       <div class="caption">
-                        <h3>intertheNET vs Institute FC</h3>
+                        <h3>Institute FC vs intertheNET</h3>
                         <h4><small>EFL CUP</small></h4>
                         <p>...</p>
                         <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>tickets</strong></a></p>
@@ -180,7 +237,88 @@
             </section>
         </div>
     </div>
-            
+    
+    <!---TOURS AND STADIUM HIRE-->
+    <div class="container-wrapper container-wrapper-gold packages-wrapper">
+                <div class="container features-container">
+                    <section class="features" id="feature-color">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="page-header">
+                                    <h2 class="section-header packages-header">PACKAGES</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6 col-lg-4">
+                                <div class="feature">
+                                    <h3><span class="glyphicon glyphicon-glass hidden-xs"></span> Gold Membership <span class="label label-success"> NEW!</span></h3>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quia necessitatibus doloremque magni repudiandae eligendi quo, ratione tempore delectus optio!</p>
+                                    <p><a href="" class="btn btn-sm btn-default"> Read More</a></p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-lg-4">
+                                <div class="feature">
+                                    <h3><span class="glyphicon glyphicon-credit-card hidden-xs"></span> Stadium Tours </h3>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quia necessitatibus doloremque magni repudiandae eligendi quo, ratione tempore delectus optio!</p>
+                                    <p><a href="" class="btn btn-sm btn-default"> Read More</a></p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 hidden-md col-lg-4">
+                                <div class="feature">
+                                    <h3><span class="glyphicon glyphicon-road hidden-xs"></span>Venue Hire</h3>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quia necessitatibus doloremque magni repudiandae eligendi quo, ratione tempore delectus optio!</p>
+                                    <p><a href="" class="btn btn-sm btn-default"> Read More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+    
+    <!----Footer--->
+     <footer class="footer container-wrapper container-wrapper-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 text-color--gold">
+                    <h3><i class="fas fa-envelope-open"></i></h3>
+                </div>
+                <div class="col-md-10 text-center text-color--gold">
+                    <h3><i class="fas fa-envelope-open"></i></h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- modal-->
+    <div class="modal fade" id="signupmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Create an account </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <div class="help-block"> We'll never share your email with anyone</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="passwordrepeat">Repeat Password</label>
+                                    <input type="password" class="form-control" id="passwordrepeat" placeholder="Repeat Your Password">
+                                </div>
+                                <button type="submit" class="btn btn-success">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
        <!--Jquery - necessary for modal and carousel -->
        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
