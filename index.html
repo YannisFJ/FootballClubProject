@@ -51,24 +51,26 @@
                        <li><a href="#ticket-head">Tickets</a></li>
                        <li><a href="#highlight-head">Highlights</a></li>
                    </ul>
-                   <!--Searchbar with search Icon-->
+                   
+                   <!--modal buttons for sign up/sign in and SEARCH-->
                    <form class="navbar-form navbar-right">
-                       <button class="btn btn-defeault btn-warning btn--cta" data-toggle='modal' data-target="#signupmodal">Sign Up!</button>
-                       <div class="form-group">
-                           <input type="text" class="form-control" placeholder="Search"/>
-                       </div>
-                       <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+                       <button type="button" class="btn btn-default btn-warning" data-toggle='modal' data-target="#searchmodal"><span class="glyphicon glyphicon-search"></button>
+                       <span class="glyphicon glyphicon-option-vertical"></span>
+                       <button type="button" class="btn btn-default btn-success btn--cta" data-toggle='modal' data-target="#signinmodal">Log In</button>
+                       <span class="glyphicon glyphicon-option-vertical"></span>
+                       <button type="button" class="btn btn-default btn-danger btn--cta" data-toggle='modal' data-target="#signupmodal">Sign Up!</button>
+                       <span class="glyphicon glyphicon-option-vertical"></span>
                    </form>
                </div>
            </div><!--.container-fluid-->
        </nav>
       
       <!--INTRO-->
-       <div class="intro-container">
+       <div id="intro" class="intro-container">
            <div class="row">
-               <div class="col-xs-12">
+               <div class="col-xs-12 hidden-xs">
                    <section class="jumbotron">
-                       <p class="lead news-header uppercase">'We knew the title race would go down to the wire' </p>
+                       <p class="lead news-header uppercase">"We knew the title race would go down to the wire"</p>
                        <h1 class="section-header page-header"> <strong> News </strong> </h1>
                    </section>
                </div>
@@ -83,13 +85,13 @@
                     <div class="col-xs-12">
                         <div class="page-header">
                             <h2 id="ticket-h2" class="section-header">Tickets</h2> &nbsp
-                          <span class="label label-default">Upcoming Matches</span>
+                          <span class="label label-default hidden-xs">Upcoming Matches</span>
                         </div>
                     </div>
                 </div>
                 <!-- ticket panels-->
                 <div class="row">
-                  <div class="col-sm-6 col-md-4">
+                  <div class="col-sm-6 col-md-4 hidden-xs">
                     <div class="thumbnail">
                       <img src="assets/images/passing.jpg" alt="match photo">
                       <div class="caption">
@@ -100,7 +102,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 hidden-xs">
                     <div class="thumbnail">
                       <img src="assets/images/stadium.jpg" alt="stadium picture">
                       <div class="caption">
@@ -134,7 +136,6 @@
                     <div class="col-xs-12">
                         <div class="page-header">
                             <h2 id="highlight-h2" class="section-header">Video Highlights</h2> &nbsp
-                          <span class="label label-default">Upcoming Matches</span>
                         </div>
                     </div>
                 </div>
@@ -182,7 +183,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <h3><span class="glyphicon glyphicon-envelope"></span>&nbsp<span class="uppercase">Subscribe to our official club newsletter</span></h3>
+                    <h3 class="font-oswald"><span class="glyphicon glyphicon-envelope"></span>&nbsp<span class="uppercase">Subscribe to our official club newsletter</span></h3>
                 </div>
             </div>
             <div class="row">
@@ -290,28 +291,32 @@
         </div>
     </footer>
     
-    <!-- modal-->
+    <!-- sign up modal-->
     <div class="modal fade" id="signupmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Create an account </h4>
+                            <h4 class="modal-title" id="myModalLabel">Create Account</h4>
                         </div>
                         <div class="modal-body">
                             <form>
                                 <div class="form-group">
-                                    <label for="email">Email address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
-                                    <div class="help-block"> We'll never share your email with anyone</div>
+                                    <label for="email">Email address &nbsp<small style="color:red;">required</small></label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your best email">
+                                    <div class="help-block"><small>Receive the latest updates, scores, transfer news and behind the scenes content!</small></div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="password">Password</label>
+                                    <label for="create-username">Create Username &nbsp<small style="color:red;">required</small></label>
+                                    <input type="text" class="form-control" id="create-username" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password &nbsp<small style="color:red;">required</small></label>
                                     <input type="password" class="form-control" id="password" placeholder="Password">
                                 </div>
                                 <div class="form-group">
-                                    <label for="passwordrepeat">Repeat Password</label>
-                                    <input type="password" class="form-control" id="passwordrepeat" placeholder="Repeat Your Password">
+                                    <label for="passwordrepeat">Confirm Password &nbsp<small style="color:red;">required</small></label>
+                                    <input type="password" class="form-control" id="passwordrepeat" placeholder="Confirm your password">
                                 </div>
                                 <button type="submit" class="btn btn-success">Sign Up</button>
                             </form>
@@ -320,8 +325,57 @@
                 </div>
             </div>
             
+            <!--SIGN IN MODAL-->
+            <div class="modal fade" id="signinmodal" tabindex="-1" role="dialog" aria-labelledby="myLoginLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myLoginLabel">Sign In</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="username">Account Username</label>
+                                    <input type="text" name="username" class="form-control" id="username" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-success">Sign In</button>
+                                <br>
+                                <p><small>If you haven't already registered, please <a href="#intro">create an account</a></small></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!---SEARCH MODAL-->
+    <div class="modal fade" id="searchmodal" tabindex="-1" role="dialog" aria-labelledby="mySearchLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="mySearchLabel">What are you looking for?</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <input type="search" class="form-control" id="search" placeholder="Search....">
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            
        <!--Jquery - necessary for modal and carousel -->
        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+       
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </html>
