@@ -7,6 +7,10 @@ body {
 
 /**UTILITY**/
 
+.text-center {
+    text-align: center;
+}
+
 .underline {
     text-decoration: underline;
 }
@@ -97,7 +101,7 @@ body {
 
 .intro-container {
     height: 85vh;
-    background: url('../images/corner.jpg') no-repeat center center fixed;
+    background: url('../images/corner1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -106,6 +110,10 @@ body {
     align-items: center;
     position: relative;
     justify-content: center;
+}
+
+.thumbnail-background1 {
+    background-size: cover;
 }
 
 .jumbotron {
@@ -213,12 +221,67 @@ body {
 
 /***footer****/
 
+.social-links li a .fa-instagram,
+.social-links li a .fa-snapchat-ghost,
+.social-links li a .fa-twitter,
+.social-links li a .fa-facebook,
+.social-links li a .fa-youtube
+{
+    border: 1px black solid;
+}
+
+.container-wrapper-gold-footer {
+        text-align: center;
+}
+
+
 .footer-text {
     text-align: center;
 }
 
 .ticket-header {
     display: inline-block;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius:50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a .fa-youtube:hover {
+    background: #e84610;
+}
+
+.social-links li a .fa-snapchat-ghost:hover {
+    background: #fffc00;
+}
+
+.social-links li a .fa-twitter:hover {
+background: #10CFFE;
+}
+
+.social-links li a .fa-facebook:hover {
+background: #3C5A99;
+}
+
+/** found the instagram background color online **/
+.social-links li a .fa-instagram:hover {
+    background: radial-gradient(circle farthest-corner at 35% 90%,#fec564,transparent 50%),radial-gradient(circle farthest-corner at 0 140%,#fec564,transparent 50%),radial-gradient(ellipse farthest-corner at 0 -25%,#5258cf,transparent 50%),radial-gradient(ellipse farthest-corner at 20% -50%,#5258cf,transparent 50%),radial-gradient(ellipse farthest-corner at 100% 0,#893dc2,transparent 50%),radial-gradient(ellipse farthest-corner at 60% -20%,#893dc2,transparent 50%),radial-gradient(ellipse farthest-corner at 100% 100%,#d9317a,transparent),linear-gradient(#6559ca,#bc318f 30%,#e33f5f 50%,#f77638 70%,#fec66d)
 }
 
 /**HISTORY***/
