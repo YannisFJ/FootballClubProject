@@ -68,11 +68,12 @@
       <!--INTRO-->
        <div id="intro" class="intro-container">
            <div class="row">
-               <div class="col-xs-12 hidden-xs">
-                   <section class="jumbotron">
-                       <p class="lead news-header uppercase">"We knew the title race would go down to the wire"</p>
-                       <h1 class="section-header page-header"> <strong> News </strong> </h1>
-                   </section>
+               <div class="col-xs-12 col-sm-12 col-md-7">
+                  
+               </div>
+               <div class="col-xs-12 col-sm-12 col-md-5">
+                   
+                   
                </div>
            </div>
        </div>
@@ -93,11 +94,12 @@
                 <div class="row">
                   <div class="col-sm-6 col-md-4 hidden-xs">
                     <div class="thumbnail">
-                      <img src="assets/images/passing.jpg" alt="match photo">
+                      <img src="assets/images/pitch.jpg" alt="match photo">
                       <div class="caption">
-                        <h3>Institute FC vs Bootstrap City</h3>
-                        <h4><small>Premier League</small></h4>
-                        <p>...</p>
+                        <h3> CSS Wanderers vs IntertheNET</h3>
+                        <h4><small><strong>Premier League</strong></small></h4>
+                        <!--easily viewable data regarding the match date/time for fans-->
+                        <p class="text-muted"><small> Home <span class="glyphicon glyphicon-option-vertical"></span> 27th Feb <span class="glyphicon glyphicon-option-vertical"></span> 4pm</small></p>
                         <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>tickets</strong></a></p>
                       </div>
                     </div>
@@ -106,9 +108,9 @@
                     <div class="thumbnail">
                       <img src="assets/images/stadium.jpg" alt="stadium picture">
                       <div class="caption">
-                        <h3>Institute FC vs intertheNET</h3>
-                        <h4><small>EFL CUP</small></h4>
-                        <p>...</p>
+                        <h3>Bootstraps vs CSS Wanderers</h3>
+                        <h4><small><strong>EFL Cup</strong></small></h4>
+                        <p class="text-muted"><small> Away <span class="glyphicon glyphicon-option-vertical"></span> 5th March <span class="glyphicon glyphicon-option-vertical"></span> 7pm</small></p>
                         <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>tickets</strong></a></p>
                       </div>
                     </div>
@@ -118,8 +120,8 @@
                       <img src="assets/images/team.jpg" alt="team photo">
                       <div class="caption">
                         <h3>Institute FC vs CSS Wanderers</h3>
-                        <h4><small>Premier League</small></h4>
-                        <p>...</p>
+                        <h4><small><strong>Premier League</strong></small></h4>
+                        <p class="text-muted"><small> Home <span class="glyphicon glyphicon-option-vertical"></span> 13th March <span class="glyphicon glyphicon-option-vertical"></span> 12pm</small></p>
                         <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>tickets</strong></a></p>
                       </div>
                     </div>
@@ -139,40 +141,84 @@
                         </div>
                     </div>
                 </div>
-                <!-- ticket panels-->
-                <div class="row row-table">
-                  <div class="col-xs-12 col-md-6">
-                    <div class="thumbnail">
-                      <img src="assets/images/passing.jpg" alt="match photo">
-                      <div class="caption">
-                        <h3>Institute FC vs Bootstrap City</h3>
-                        <h4><small>Premier League</small></h4>
-                        <p>...</p>
-                        <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>tickets</strong></a></p>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-3">
-                    <div class="thumbnail">
-                      <img src="assets/images/stadium.jpg" alt="stadium picture">
-                      <div class="caption">
-                        <h3>Institute FC vs intertheNET</h3>
-                        <h4><small>EFL CUP</small></h4>
-                        <p>...</p>
-                        <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>tickets</strong></a></p>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img src="assets/images/team.jpg" alt="team photo">
-                      <div class="caption">
-                        <h3>Institute FC vs CSS Wanderers</h3>
-                        <h4><small>Premier League</small></h4>
-                        <p>...</p>
-                        <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>tickets</strong></a></p>
-                      </div>
-                    </div>
+                <!--VIDEO CONTENT AND CAPTIONS-->
+                <div class="container video-content">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <div class="flex-video widescreen ">
+                                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0zy_v4_vNmw?start=37" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>   
+                              <div class="caption-video">
+                                <h3>Highlights from CSS Wanderers' star player!</h3>
+                                <p><small>Sublime strike from our new striker the first leg of cup quarter final.</small></p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <!---I was curious how to create a video within a bootstrap thumbnail and found the following method on Stackoverflow.com-->
+                                <div class="flex-video widescreen ">
+                                  <iframe  src="https://www.youtube-nocookie.com/embed/GFSulXDTrVo?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>   
+                              <!---end of video--->
+                              <div class="caption-video">
+                                <h3>Wonderstrike for CSS Wanderers</h3>
+                                <p><small>Sublime strike from our new striker the first leg of cup quarter final.</small></p>
+                              </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <div class="flex-video widescreen ">
+                                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/R32I33U66rs?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>   
+                              <div class="caption-video">
+                                <h3>Amazing performance from Sancho!</h3>
+                                <p><small>Highlights of another brilliant perofrmance from our star winger.</small></p>
+                              </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <div class="flex-video widescreen ">
+                                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lmZVfntb3O0?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>   
+                              <div class="caption-video">
+                                <h3>Fans bid farewell to a club legend</h3>
+                                <p><small>After his recent transfer, our wonderful fans say goodbye one last time.</small></p>
+                              </div>
+                            </div>
+                        </div>
+                    </div><!---end of first row--->
+                    <!--- I decided to hide this second row of videos for aesthetic purposes
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                             <div class="thumbnail">
+                                <div class="flex-video widescreen ">
+                                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/erSBt4pw2Fg?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>   
+                              <div class="caption-video">
+                                <h3>Manager signs autographs</h3>
+                                <p><small>Our manager signs autographs for fans whilst attending a GQ event.</small></p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="thumbnail">
+                                <div class="flex-video widescreen ">
+                                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YeAZcZ3INxw?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>   
+                              <div class="caption-video">
+                                <h3>Fans celebrate a famous victory!</h3>
+                                <p><small>See the fan celebrations after a potentially title-deciding game!</small></p>
+                              </div>
+                            </div>
+                        </div>
+                    </div> 
+                    -->
                 </div>
             </section>
         </div>
@@ -246,9 +292,9 @@
             </div>
     
     <!--HISTORY-->
-    <div id="highlight-head" class="container-wrapper container-wrapper-grey highlight-wrapper">
+    <div id="history-head" class="container-wrapper container-wrapper-grey highlight-wrapper">
         <div class="container">
-            <section class="highlights">
+            <section class="history">
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="page-header">
@@ -256,29 +302,55 @@
                         </div>
                     </div>
                 </div>
-                <!-- ticket panels-->
-                <div class="row">
-                  <div class="col-sm-6 col-md-6">
-                    <div class="thumbnail">
-                      <img src="assets/images/ball.jpg" alt="match photo">
-                      <div class="caption">
-                        <h3>Institute FC vs Bootstrap City</h3>
-                        <h4><small>Premier League</small></h4>
-                        <p>...</p>
-                        <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>tickets</strong></a></p>
-                      </div>
+                <!-- history section -->
+                <div class="row row-table">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="jumbotron">
+                          <p>CSS Wanderers were founded in 1996 and have since become a force in modern football. We have fans all around the world and have won countless trophies whilst working our way up through the divisions!</p>
+                          <p class="hidden-xs">
+                              Affectionally nicknamed the 'Bootstrappers', our club has become famous for our <strong>colorful</strong> approach to playing the game. Additionally, our famous gold and black kit has become synonymous with perserverence and grit.</p>
+                          
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-6">
-                    <div class="thumbnail">
-                      <img src="assets/images/stadium.jpg" alt="stadium picture">
-                      <div class="caption">
-                        <h3>Institute FC vs intertheNET</h3>
-                        <h4><small>EFL CUP</small></h4>
-                        <p>...</p>
-                        <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>tickets</strong></a></p>
-                      </div>
+                    
+                    <div class="col-xs-12 col-md-3">
+                        <div class="thumbnail">
+                          <img src="assets/images/ball.jpg" alt="match photo">
+                          <div class="caption">
+                            <h3> 
+                             <span><i class="fas fa-trophy"></i></span>x10
+                            </h3>
+                            <h3>
+                              <span><i class="fas fa-medal"></i></span>x3
+                            </h3>
+                            <h4><small><strong>Premier League</strong></small></h4>
+                            <!--easily viewable data regarding the match date/time for fans-->
+                            <p class="text-muted"><small> Home <span class="glyphicon glyphicon-option-vertical"></span> 27th Feb <span class="glyphicon glyphicon-option-vertical"></span> 4pm</small></p>
+                            <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>See our trophy cabinet</strong></a></p>
+                          </div>
+                        </div>
                     </div>
+                    
+                    <div class="col-xs-12 col-md-3">
+                        <div class="thumbnail">
+                          <img src="assets/images/dawn-pitch.jpg" alt="match photo">
+                          <div class="caption">
+                            <h3> 
+                             <span><i class="fas fa-trophy"></i></span>x10
+                            </h3>
+                            <h3>
+                              <span><i class="fas fa-medal"></i></span>x3
+                            </h3>
+                            <h4><small><strong>Premier League</strong></small></h4>
+                            <!--easily viewable data regarding the match date/time for fans-->
+                            <p class="text-muted"><small> Home <span class="glyphicon glyphicon-option-vertical"></span> 27th Feb <span class="glyphicon glyphicon-option-vertical"></span> 4pm</small></p>
+                            <p><a href="#" class="btn btn-danger ticket-button" role="button"><strong>tickets</strong></a></p>
+                          </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
                 </div>
             </section>
         </div>
