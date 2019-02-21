@@ -28,34 +28,29 @@
                         <span class="icon-bar"></span>
                    </button>
                    <!-- **link href to top section of page**-->
-                    <a class="navbar-brand" href="#intro" style="font-family: 'Oswald'; color: gold;"><i class="fab fa-css3"></i> </a>
+                    <a class="navbar-brand" href="#intro" style="font-family: 'Oswald'; color: gold;"><i class="fab fa-css3 fa-css3-head"></i> </a>
                </div>
                
                <!--Links for toggling-->
                <div id="navbar" class="collapse navbar-collapse" >
-                   <ul class="nav navbar-nav">
-                       <li class="dropdown active">
-                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Menu</strong></a>
-                           <ul class="dropdown-menu">
-                               <li><a href="#">News</a></li>
-                               <li><a href="#">Club History</a></li>
-                               <li><a href="#">Stadium Events</a></li>
-                               <li><a href="#">Squad</a></li>
-                             
-                           </ul>
-                       </li>
+                   <ul class="nav navbar-nav uppercase">
+                      <li><a href="#intro">News</a></li>
                        <li><a href="#ticket-head">Tickets</a></li>
-                       <li><a href="#highlight-head">Highlights</a></li>
+                       <li><a href="#highlight-head">Video Highlights</a></li>
+                       <li><a href="#events-head">Events</a></li>
+                       <li><a href="#history-head">History</a></li>
+                       <li class="dropdown">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+                           <ul class="dropdown-menu">
+                               <li><a href="#events-head">Membership</a></li>
+                               <li><a href="#subscribe-head">Newsletter</a></li>
+                           </ul>
                    </ul>
                    
                    <!--modal buttons for sign up/sign in and SEARCH-->
                    <form class="navbar-form navbar-right">
+                       <span class="glyphicon glyphicon-option-vertical"></span>
                        <button type="button" class="btn btn-default btn-warning" data-toggle='modal' data-target="#searchmodal"><span class="glyphicon glyphicon-search"></button>
-                       <span class="glyphicon glyphicon-option-vertical"></span>
-                       <button type="button" class="btn btn-default btn-success btn--cta" data-toggle='modal' data-target="#signinmodal">Log In</button>
-                       <span class="glyphicon glyphicon-option-vertical"></span>
-                       <button type="button" class="btn btn-default btn-danger btn--cta" data-toggle='modal' data-target="#signupmodal">Sign Up!</button>
-                       <span class="glyphicon glyphicon-option-vertical"></span>
                    </form>
                </div>
            </div><!--.container-fluid-->
@@ -66,10 +61,10 @@
            <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                    <div class="jumbotron text-center">
-                       <h1 class="subscribe-header text-color--gold"> The official website of <strong><i class="fab fa-css3"></i> CSS Wanderers FC</strong></h1>
+                       <h1 class="subscribe-header" style="color: gold;"><strong><i class="fab fa-css3"></i> CSS Wanderers FC</strong></h1>
                        <hr>
                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate praesentium voluptates quam unde molestias quaerat mollitia incidunt dolores optio? Lorem ipsum dolor sit amet! </p>
-                       <p><a class="btn btn-warning btn-md" href="#" role="button">All News</a></p>
+                       <p><a class="btn btn-warning btn-md" target="_blank" href="https://www.skysports.com/football/news" role="button">All News</a></p>
                    </div>
                </div>
                
@@ -191,40 +186,14 @@
                               </div>
                             </div>
                         </div>
-                    </div><!---end of first row--->
-                    <!--- I decided to hide this second row of videos for aesthetic purposes
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                             <div class="thumbnail">
-                                <div class="flex-video widescreen ">
-                                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/erSBt4pw2Fg?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>   
-                              <div class="caption-video">
-                                <h3>Manager signs autographs</h3>
-                                <p><small>Our manager signs autographs for fans whilst attending a GQ event.</small></p>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="thumbnail">
-                                <div class="flex-video widescreen ">
-                                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YeAZcZ3INxw?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>   
-                              <div class="caption-video">
-                                <h3>Fans celebrate a famous victory!</h3>
-                                <p><small>See the fan celebrations after a potentially title-deciding game!</small></p>
-                              </div>
-                            </div>
-                        </div>
-                    </div> 
-                    -->
+                    </div>
                 </div>
             </section>
         </div>
     </div>
     
     <!-- SUBSCRIBE-->
-    <div class="subscribe subscribe-container container-wrapper container-wrapper-gold hidden-xs">
+    <div id="subscribe-head" class="subscribe subscribe-container container-wrapper container-wrapper-gold hidden-xs">
         <div class="container jumbotron jumbotron-subscribe">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
@@ -246,7 +215,7 @@
     </div>
     
     <!---TOURS AND STADIUM HIRE-->
-    <div class="container-wrapper container-wrapper-gold packages-wrapper">
+    <div class="container-wrapper container-wrapper-gold packages-wrapper" id="events-head">
                 <div class="container features-container">
                     <section class="features" id="feature-color">
                         <div class="row">
@@ -355,84 +324,7 @@
                     </div>
                 </div>
             </div>
-    
-    <!-- sign up modal-->
-    <div class="modal fade" id="signupmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Create Account</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="email">Email address &nbsp<small style="color:red;">(required)</small></label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter your best email" required>
-                                    <div class="help-block"><small>Receive the latest updates, scores, transfer news and behind the scenes content!</small></div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="create-username">Create Username &nbsp<small style="color:red;">(required)</small></label>
-                                    <input type="text" class="form-control" id="create-username" placeholder="Username" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">Password &nbsp<small style="color:red;">(required)</small></label>
-                                    <input type="password" class="form-control" id="password" placeholder="Password" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="passwordrepeat">Confirm Password &nbsp<small style="color:red;">(required)</small></label>
-                                    <input type="password" class="form-control" id="passwordrepeat" placeholder="Confirm password" required>
-                                </div>
-                                <button type="submit" class="btn btn-success">Sign Up</button>
-                                <div class="form-group text-center">
-                                    <hr>
-                                    <h5 class="underline">Don't forget to follow us on social media!</h5>
-                                    <ul class="list-inline social-links"> 
-                    					<li><a target="_blank" href="https://twitter.com/?lang=en-gb"><i class="fab fa-twitter"></i></a></li>
-                    					<li><a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-                    					<li><a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
-                    					<li><a target="_blank" href="https://www.snapchat.com/l/en-gb/"><i class="fab fa-snapchat-ghost"></i></a></li>
-                    					<li><a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
-                    				</ul>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!--SIGN IN MODAL-->
-            <div class="modal fade" id="signinmodal" tabindex="-1" role="dialog" aria-labelledby="myLoginLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myLoginLabel">Sign In</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="username">Account Username</label>
-                                    <input type="text" name="username" class="form-control" id="username" placeholder="Username" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="password" placeholder="Password" required>
-                                    <a href="#" style="color:red;"><small >Forgotten password?</small></a>
-                                </div>
-                                <div class="form-group">
-                                    <input type="checkbox" name="checkbox" id="checkbox" value="Remember">&nbsp <small>Remember your details on this computer?</small><br>
-                                </div>
-                                
-                                <button type="submit" class="btn btn-success">Sign In</button>
-                                <hr>
-                                <p><small>If you haven't already registered, please <a href="#intro">create an account</a></small></p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+
             <!---SEARCH MODAL-->
     <div class="modal fade" id="searchmodal" tabindex="-1" role="dialog" aria-labelledby="mySearchLabel">
                 <div class="modal-dialog" role="document">
