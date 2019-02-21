@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'calibri';
     padding-top: 50px;
 }
 
 /**UTILITY**/
+
+.right {
+    text-align: right;
+}
 
 .text-center {
     text-align: center;
@@ -56,6 +60,13 @@ body {
 
 /** Navbar **/
 
+.fa-css3-head {
+    height: 200px;
+    font-size: 30px;
+    position: relative;
+    top: -4px;
+}
+
 .navbar-brand {
     position: relative;
     background: url() center center;
@@ -64,6 +75,18 @@ body {
     left: 15px;
     background-size: contain;
     margin-right: 5vw;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: gold;
+}
+
+.navbar-inverse .navbar-nav>li>a>ul>li>a:hover {
+    background-color: gold;
 }
 
 .navbar-inverse {
@@ -221,13 +244,29 @@ body {
 
 /***footer****/
 
+.footer-header {
+    font-family: 'Oswald';
+    display: inline-block;
+}
+
+.footer-header {
+    text-shadow: 1px 1px grey;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+
+
 .social-links li a .fa-instagram,
 .social-links li a .fa-snapchat-ghost,
 .social-links li a .fa-twitter,
 .social-links li a .fa-facebook,
 .social-links li a .fa-youtube
 {
-    border: 1px black solid;
+    border: 1px solid black;
 }
 
 .container-wrapper-gold-footer {
@@ -251,8 +290,8 @@ body {
     width: 32px;
     height: 32px;
     padding: 12px 0;
-    border-radius:50%;
-    font-size: 13px;
+    border-radius: 50%;
+    font-size: 1.5rem;
     line-height: 7px;
     text-align: center;
     color: #fafafa;
@@ -263,26 +302,49 @@ body {
     -o-transition: all 0.35s ease-in-out;
 }
 
-.social-links li a .fa-youtube:hover {
+.social-links li a .fa-youtube {
     background: #e84610;
 }
 
-.social-links li a .fa-snapchat-ghost:hover {
+.social-links li a .fa-snapchat-ghost {
     background: #fffc00;
+    color: cornsilk;
 }
 
-.social-links li a .fa-twitter:hover {
+.social-links li a .fa-twitter {
 background: #10CFFE;
 }
 
-.social-links li a .fa-facebook:hover {
+.social-links li a .fa-facebook {
 background: #3C5A99;
 }
 
 /** found the instagram background color online **/
-.social-links li a .fa-instagram:hover {
+.social-links li a .fa-instagram {
     background: radial-gradient(circle farthest-corner at 35% 90%,#fec564,transparent 50%),radial-gradient(circle farthest-corner at 0 140%,#fec564,transparent 50%),radial-gradient(ellipse farthest-corner at 0 -25%,#5258cf,transparent 50%),radial-gradient(ellipse farthest-corner at 20% -50%,#5258cf,transparent 50%),radial-gradient(ellipse farthest-corner at 100% 0,#893dc2,transparent 50%),radial-gradient(ellipse farthest-corner at 60% -20%,#893dc2,transparent 50%),radial-gradient(ellipse farthest-corner at 100% 100%,#d9317a,transparent),linear-gradient(#6559ca,#bc318f 30%,#e33f5f 50%,#f77638 70%,#fec66d)
 }
+
+/****hover****/
+.social-links li a .fa-youtube:hover {
+    text-shadow: 0 0 3px #000;
+}
+
+.social-links li a .fa-snapchat-ghost:hover {
+    text-shadow: 0 0 2px #000;
+}
+
+.social-links li a .fa-twitter:hover {
+    text-shadow: 0 0 3px #000;
+}
+
+.social-links li a .fa-facebook:hover {
+    text-shadow: 0 0 3px #000;
+}
+
+.social-links li a .fa-instagram:hover {
+    text-shadow: 0 0 3px #000;
+}
+
 
 /**HISTORY***/
 
