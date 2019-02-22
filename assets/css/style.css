@@ -3,6 +3,7 @@
 body {
     font-family: 'Roboto', 'calibri';
     padding-top: 50px;
+    position: relative;
 }
 
 /**UTILITY**/
@@ -67,6 +68,20 @@ body {
     top: -4px;
 }
 
+.nav-media {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-media:hover {
+    color: gold;
+}
+
+.nav-media:active {
+    color: white;
+    text-decoration: none;
+}
+
 .navbar-brand {
     position: relative;
     background: url() center center;
@@ -98,9 +113,17 @@ body {
 
 /**CAROUSEL**/
 
-.carousel-inner {
-    max-width: 40vh;
-    max-height: 30vh;
+.carousel {
+  left: 0px;
+  height: 85vh;
+}
+
+.carousel-inner{
+  height: 100%;
+}
+
+.carousel-inner item img{
+height:100%;margin:0 auto;
 }
 
 /*****headers****/
@@ -120,20 +143,6 @@ body {
     color: #E754CA !important;
 }
 
-
-
-.intro-container {
-    height: 85vh;
-    background: url('../images/corner1.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: center;
-}
 
 .thumbnail-background1 {
     background-size: cover;
@@ -307,8 +316,8 @@ body {
 }
 
 .social-links li a .fa-snapchat-ghost {
-    background: #fffc00;
-    color: cornsilk;
+    background: gold;
+    color: #333333;
 }
 
 .social-links li a .fa-twitter {
