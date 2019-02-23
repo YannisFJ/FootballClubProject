@@ -498,3 +498,9 @@ background: #3C5A99;
 
  .flex-video { padding-top: 0; }
    }
+
+/***modal**/
+
+.modal-body .form-group .col-md-2 .btn a{
+    color: white;
+}
