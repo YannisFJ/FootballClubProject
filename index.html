@@ -27,14 +27,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                    </button>
-                   <!-- **link href to top section of page**-->
                     <a class="navbar-brand" href="#introcarousel" style="font-family: 'Oswald'; color: gold;"><i class="fab fa-css3 fa-css3-head"></i></a>
                </div>
                
                <!--Links for toggling-->
                <div id="navbar" class="collapse navbar-collapse" >
                    <ul class="nav navbar-nav uppercase">
-                      <li><a href="#introcarousel">News</a></li>
+                      <!--This anchor links to the 4th slide on the carousel because that slide contains a news summary! -->
+                      <li><a href="#introcarousel" data-slide-to="3">News</a></li>
+                      <!--The remaining anchors link to sections on the page-->
                        <li><a href="#ticket-head">Tickets</a></li>
                        <li><a href="#highlight-head">Video Highlights</a></li>
                        <li><a href="#subscribe-head">Newsletter</a></li>
@@ -72,7 +73,7 @@
                        <h1 class="subscribe-header" style="color: gold;"><strong><i class="fab fa-css3"></i></strong></h1>
                        <p><span class="news uppercase">#Flashback</span></p>
                        <p class="carousel-jumbotext">Relive the glory of our triumphant 2017/18 season</p>
-                       <p><a class="btn btn-warning btn-md uppercase" target="_blank" href="https://www.skysports.com/football/news" role="button">See More</a></p>
+                       <p><a class="btn btn-warning btn-md uppercase" target="_blank" href="https://www.premierleague.com/gallery/650610" role="button">See More</a></p>
                    </div>
                    
                     </div>
@@ -83,7 +84,7 @@
                        <h1 class="subscribe-header" style="color: gold;"><strong><i class="fab fa-css3"></i></strong></h1>
                        <p><span class="news uppercase">Match preview</span></p>
                        <p class="carousel-jumbotext">Manager: "Fans deserve a European victory"</p>
-                       <p><a class="btn btn-warning btn-md uppercase" target="_blank" href="https://www.skysports.com/football/news" role="button">Full transcript</a></p>
+                       <p><a class="btn btn-warning btn-md uppercase" target="_blank" href="https://www.mirror.co.uk/sport/football/news/full-transcript-ole-gunnar-solskjaer-13991869" role="button">Full transcript</a></p>
                    </div>
                     </div>
                 </div >
@@ -93,19 +94,19 @@
                        <h1 class="subscribe-header" style="color: gold;"><strong><i class="fab fa-css3"></i></strong></h1>
                        <p><span class="news uppercase">official club statement</span></p>
                        <p class="carousel-jumbotext">Statement from <br> CSS Wanderers </p>
-                       <p><a class="btn btn-warning btn-md uppercase" target="_blank" href="https://www.skysports.com/football/news" role="button">See More</a></p>
+                       <p><a class="btn btn-warning btn-md uppercase" target="_blank" href="https://www.asmonaco.com/en/communique-officiel-petrov/" role="button">See More</a></p>
                    </div>
                     </div>
                   </div >
-                   <div class="item slide4">
+                   <div class="item slide4" id="headlines">
                     <div class="carousel-caption">
                         <div class="jumbotron jumbotron-slide text-center">
                        <h1 class="subscribe-header" style="color: gold;"><strong><i class="fab fa-css3"></i><br></strong></h1>
                        <p><span class="news uppercase">News Headlines</span></p>
-                       <p><a href=" " target="_blank"><span class="glyphicon glyphicon-pushpin"></span>&nbsp Manager pre-match interview</a></p>
-                       <p><a href=" " target="_blank"><span class="glyphicon glyphicon-pushpin"></span>&nbsp CSS Wanderers Club Statement</a></p>
-                       <p><a href=" " target="_blank"><span class="glyphicon glyphicon-pushpin"></span>&nbsp Updates on the fitness of our star striker</a></p>
-                       <p><a href=" " target="_blank"><span class="glyphicon glyphicon-pushpin"></span>&nbsp A look back at our triumphant 2017/18 season</a></p>
+                       <p><a href="https://www.arsenal.com/news/unais-press-conference-emery-single-word" target="_blank"><span class="glyphicon glyphicon-pushpin"></span>&nbsp Manager pre-match interview</a></p>
+                       <p><a href="https://www.asmonaco.com/en/communique-officiel-petrov/" target="_blank"><span class="glyphicon glyphicon-pushpin"></span>&nbsp CSS Wanderers Club Statement</a></p>
+                       <p><a href="https://www.tottenhamhotspur.com/news/2019/february/mauricio-latest-on-ben-davies-and-harry-kane/" target="_blank"><span class="glyphicon glyphicon-pushpin"></span>&nbsp Updates on the fitness of our star striker</a></p>
+                       <p><a href="https://www.premierleague.com/gallery/650610" target="_blank"><span class="glyphicon glyphicon-pushpin"></span>&nbsp A look back at our triumphant 2017/18 season</a></p>
                        <p><a class="btn btn-warning btn-md uppercase" target="_blank" href="https://www.skysports.com/football/news" role="button">All News</a></p>
                    </div>
                     </div>
@@ -288,7 +289,7 @@
                                     <h3><span><i class="far fa-id-card"></i></span>&nbsp Gold Membership</h3>
                                     <p> Gold membership has countless benefits, including priority ticket access, discounted stadium tours and merch. This and more for only <s>£40</s> <strong><mark>£25</mark></strong> for a limited time!</p>
                                     <p></p>
-                                    <p><a target="_blank" href="https://www.google.com/search?q=gold+membership+football+club&oq=gold+membership+football+club&aqs=chrome..69i57j0.4884j0j9&sourceid=chrome&ie=UTF-8" class="btn btn-sm btn-default uppercase packages-button"><strong>Join Now</strong></a></p>
+                                    <p><a target="_blank" href="https://www.arsenal.com/membership/gold" class="btn btn-sm btn-default uppercase packages-button"><strong>Join Now</strong></a></p>
                                     <br>
                                     <p><small class="underline">Different membership options also available.</small></p>
                                 </div>
@@ -307,7 +308,7 @@
                                 <div class="packages">
                                     <h3><span><i class="fas fa-glass-martini-alt"></i></span>&nbsp Venue Hire <span class="label label-success">NEW!</span></h3>
                                     <p> Whether you're hosting a corporate event, a party, or even getting married, there are events for everyone at the Stylesheet Stadium. Click below for info and pricing.</p>
-                                    <p><a target="_blank" href="https://www.google.com/search?q=venue+hire+football+stadium&oq=venue+hire+football+stadium&aqs=chrome..69i57.6078j0j7&sourceid=chrome&ie=UTF-8" class="btn btn-sm btn-default uppercase packages-button"><strong>Find Out More</strong></a></p>
+                                    <p><a target="_blank" href="https://stadiumexperience.com/" class="btn btn-sm btn-default uppercase packages-button"><strong>Find Out More</strong></a></p>
                                 </div>
                             </div>
                         </div>
@@ -372,7 +373,10 @@
                                     <div class="col-xs-12">
                                     </div>
                                     <div class="col-xs-8 col-xs-offset-2">
-                                        <h4 class="text-center"> You should receive a confirmation email shortly <i class="fas fa-check-circle" style="color: green;"></i></h4>
+                                        <h3 class="text-center"> You should receive a confirmation email shortly <i class="fas fa-check-circle" style="color: green;"></i></h3>
+                                        <br>
+                                        <br>
+                                        <p class="text-center underline"><small>Please ensure you entered your full and correct email address.</small></p>
                                     </div>
                                 </div>
                             </form>
@@ -392,11 +396,11 @@
                         <div class="modal-body">
                             <form class="form-horizontal">
                                 <div class="form-group">
-                                    <div class="col-md-10" style="padding-right: 6px;">
+                                    <div class="col-md-10" style="padding-right: 0px;">
                                         <input type="search" class="form-control" id="search" placeholder="Search....">
                                     </div>
                                     <div class="col-md-2" style="padding-left: 7px;">
-                                        <button type="submit" class="btn btn-success">Submit</button>
+                                        <button type="submit" class="btn btn-success"><a href="https://www.google.com/" target="_blank">Submit</a></button>
                                     </div>
                                 </div>
                             </form>
