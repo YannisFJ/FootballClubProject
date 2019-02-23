@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 body {
-    font-family: 'Roboto', 'calibri';
+    font-family: 'Roboto', 'exo';
     padding-top: 50px;
+    position: relative;
+}
+
+/**general**/
+
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+a {
+    color: #222222;
 }
 
 /**UTILITY**/
@@ -67,6 +80,20 @@ body {
     top: -4px;
 }
 
+.nav-media {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-media:hover {
+    color: gold;
+}
+
+.nav-media:active {
+    color: white;
+    text-decoration: none;
+}
+
 .navbar-brand {
     position: relative;
     background: url() center center;
@@ -98,9 +125,94 @@ body {
 
 /**CAROUSEL**/
 
-.carousel-inner {
-    max-width: 40vh;
-    max-height: 30vh;
+.carousel {
+  left: 0px;
+  height: 85vh;
+}
+
+.carousel-inner{
+  height: 100%;
+}
+
+.carousel-inner item img{
+height:100%;margin:0 auto;
+}
+
+.carousel-caption {
+    text-shadow: 0 0px 0px #222222;
+    color: #222222;
+}
+
+.jumbotron-slide {
+    padding-top: 0px;
+}
+
+.slide1 {
+    height: 85vh;
+    background: url('../images/ball.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.slide2 {
+    height: 85vh;
+    background: url('../images/crowd.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.slide3 {
+    height: 85vh;
+    background: url('../images/Yellow.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.slide4 {
+    height: 85vh;
+    background: url('../images/corner1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+
+
+.news {
+    background-color: gold;
+    display: block;
+    font-weight: 600;
+}
+
+.carousel-jumbotext {
+    font-size: 51px !important;
+    font-weight: bold !important;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 60px !important;
 }
 
 /*****headers****/
@@ -120,20 +232,6 @@ body {
     color: #E754CA !important;
 }
 
-
-
-.intro-container {
-    height: 85vh;
-    background: url('../images/corner1.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: center;
-}
 
 .thumbnail-background1 {
     background-size: cover;
@@ -307,8 +405,8 @@ body {
 }
 
 .social-links li a .fa-snapchat-ghost {
-    background: #fffc00;
-    color: cornsilk;
+    background: gold;
+    color: white;
 }
 
 .social-links li a .fa-twitter {
@@ -326,23 +424,23 @@ background: #3C5A99;
 
 /****hover****/
 .social-links li a .fa-youtube:hover {
-    text-shadow: 0 0 3px #000;
+    background: #333333;
 }
 
 .social-links li a .fa-snapchat-ghost:hover {
-    text-shadow: 0 0 2px #000;
+    background: #333333;
 }
 
 .social-links li a .fa-twitter:hover {
-    text-shadow: 0 0 3px #000;
+    background: #333333;
 }
 
 .social-links li a .fa-facebook:hover {
-    text-shadow: 0 0 3px #000;
+    background: #333333;
 }
 
 .social-links li a .fa-instagram:hover {
-    text-shadow: 0 0 3px #000;
+    background: #333333;
 }
 
 
