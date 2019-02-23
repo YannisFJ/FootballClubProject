@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 body {
-    font-family: 'Roboto', 'calibri';
+    font-family: 'Roboto', 'exo';
     padding-top: 50px;
     position: relative;
+}
+
+/**general**/
+
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+a {
+    color: #222222;
 }
 
 /**UTILITY**/
@@ -124,6 +136,73 @@ body {
 
 .carousel-inner item img{
 height:100%;margin:0 auto;
+}
+
+.carousel-caption {
+    text-shadow: 0 0px 0px #222222;
+    color: #222222;
+}
+
+.jumbotron-slide {
+    padding-top: 0px;
+}
+
+.slide1 {
+    height: 85vh;
+    background: url('../images/corner1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.slide2 {
+    height: 85vh;
+    background: url('../images/crowd.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.slide3 {
+    height: 85vh;
+    background: url('../images/Yellow.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.slide4 {
+    height: 85vh;
+    background: url('../images/ball.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.news {
+    background-color: gold;
+    display: block;
+    font-weight: 600;
 }
 
 /*****headers****/
@@ -317,7 +396,7 @@ height:100%;margin:0 auto;
 
 .social-links li a .fa-snapchat-ghost {
     background: gold;
-    color: #333333;
+    color: white;
 }
 
 .social-links li a .fa-twitter {
@@ -335,23 +414,23 @@ background: #3C5A99;
 
 /****hover****/
 .social-links li a .fa-youtube:hover {
-    text-shadow: 0 0 3px #000;
+    background: #333333;
 }
 
 .social-links li a .fa-snapchat-ghost:hover {
-    text-shadow: 0 0 2px #000;
+    background: #333333;
 }
 
 .social-links li a .fa-twitter:hover {
-    text-shadow: 0 0 3px #000;
+    background: #333333;
 }
 
 .social-links li a .fa-facebook:hover {
-    text-shadow: 0 0 3px #000;
+    background: #333333;
 }
 
 .social-links li a .fa-instagram:hover {
-    text-shadow: 0 0 3px #000;
+    background: #333333;
 }
 
 
