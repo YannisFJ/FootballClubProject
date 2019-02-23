@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', 'exo';
     padding-top: 50px;
