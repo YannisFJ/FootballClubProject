@@ -11,6 +11,14 @@ body {
     position: relative;
 }
 
+.container-wrapper {
+   padding-top: 30px;
+}
+
+.container-wrappertix .page-header{
+    padding-top: 20px;
+}
+
 /**general**/
 
 .jumbotron p {
@@ -259,15 +267,16 @@ height:100%;margin:0 auto;
 
 /**TICKET SECTION**/
 
-#ticket-head {
-    min-height: 65vh;
-}
+
 .container-wrapper-gold {
     background-color: gold;
 }
 
+
+
 .ticket-wrapper {
     padding-bottom: 40px;
+    padding-top: 0px;
 }
 
 .thumbnail {
@@ -461,7 +470,10 @@ background: #3C5A99;
 
 #highlight-head .container .highlights .video-content .col-xs-12 {
     padding-left: 0px;
-    
+}
+
+#highlight-head {
+    padding-bottom: 100px;
 }
 
 /**CODE gotten from StackOverflow to create flexbile video in thumbail**/
