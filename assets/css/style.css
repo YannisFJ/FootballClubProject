@@ -138,9 +138,14 @@ a {
 
 /**CAROUSEL**/
 
+.carousel-inner .item {
+  margin: auto;
+}
+
 .carousel {
   left: 0px;
   height: 85vh;
+  align-items: center;
 }
 
 .carousel-inner{
@@ -352,6 +357,17 @@ height:100%;margin:0 auto;
 
 .packages {
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .packages-header {
+        font-size: 4em;
+}
+
+    .page-header {
+        text-align: center;
+    }
+    
 }
 
 /***footer****/
