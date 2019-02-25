@@ -39,7 +39,7 @@
                       <!--The remaining anchors link to sections on the page-->
                        <li><a href="#ticket-head">Tickets</a></li>
                        <li><a href="#highlight-head">Video Highlights</a></li>
-                       <li><a href="#subscribe-head">Newsletter</a></li>
+                       <li class="hidden-xs hidden-sm"><a href="#subscribe-head">Newsletter</a></li>
                        <li><a href="#events-head">Events & Membership</a></li>
                        <li><a href="#history-head">History</a></li>
                    </ul>
@@ -140,7 +140,7 @@
                 </div>
                 <!-- ticket panels-->
                 <div class="row">
-                  <div class="col-sm-6 col-md-4">
+                  <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="thumbnail">
                       <img src="assets/images/pitch.jpg" alt="match photo">
                       <div class="caption">
@@ -152,7 +152,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 hidden-xs">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="thumbnail">
                       <img src="assets/images/stadium.jpg" alt="stadium picture">
                       <div class="caption">
@@ -163,7 +163,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 hidden-xs hidden-sm">
+                <div class="hidden-xs hidden-sm col-md-4 ">
                     <div class="thumbnail">
                       <img src="assets/images/team.jpg" alt="team photo">
                       <div class="caption">
@@ -185,14 +185,14 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="page-header">
-                            <h2 id="highlight-h2" class="section-header">Video Highlights</h2> &nbsp
+                            <h2 id="highlight-h2" class="section-header"><span class="hidden-xs">Video</span>Highlights</h2> &nbsp
                         </div>
                     </div>
                 </div>
                 <!--VIDEO CONTENT AND CAPTIONS-->
                 <div class="container video-content">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="hidden-xs col-sm-6 col-md-4 col-lg-3">
                             <div class="thumbnail">
                                 <div class="flex-video widescreen ">
                                   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0zy_v4_vNmw?start=37" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -203,7 +203,7 @@
                               </div>
                             </div>
                         </div>
-                        <div class="hidden-xs hidden-sm col-md-4 col-lg-3">
+                        <div class="col-xs-12 hidden-sm col-md-4 col-lg-3">
                             <div class="thumbnail">
                                 <div class="flex-video widescreen ">
                                   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/R32I33U66rs?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -214,7 +214,7 @@
                               </div>
                             </div>
                         </div>
-                        <div class="hidden-xs col-sm-6 col-md-4 col-lg-3">
+                        <div class="col-12-xs col-sm-6 col-md-4 col-lg-3">
                             <div class="thumbnail">
                                 <!---I was curious how to create a video within a bootstrap thumbnail and found the following method on Stackoverflow.com-->
                                 <div class="flex-video widescreen ">
@@ -248,7 +248,7 @@
     </div>
     
     <!-- SUBSCRIBE-->
-    <div id="subscribe-head" class="subscribe subscribe-container container-wrapper container-wrapper-gold hidden-xs">
+    <div id="subscribe-head" class="hidden-xs subscribe subscribe-container container-wrapper container-wrapper-gold ">
         <div class="container jumbotron jumbotron-subscribe">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
@@ -277,7 +277,7 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="page-header">
-                                    <h2 class="section-header packages-header">Membership & Events</h2>
+                                    <h2 class="section-header packages-header">Membership <span class="hidden-xs">& Events</span></h2>
                                 </div>
                             </div>
                         </div>
@@ -302,7 +302,7 @@
                                     <p><small class="underline">Pricing varies dependent on member status.</small></p>
                                 </div>
                             </div>
-                            <div class="hidden-xs col-sm-6 col-md-4 col-lg-4">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                 <div class="packages">
                                     <h3><span><i class="fas fa-glass-martini-alt"></i></span>&nbsp Venue Hire <span class="label label-success">NEW!</span></h3>
                                     <p> Whether you're hosting a corporate event, a party, or even getting married, there are events for everyone at the Stylesheet Stadium. Click below for info and pricing.</p>
@@ -315,7 +315,7 @@
             </div>
     
     <!--HISTORY-->
-    <div id="history-head" class="container-wrapper-grey highlight-wrapper">
+    <div id="history-head" class="container-wrapper container-wrapper-grey highlight-wrapper">
         <div class="container">
             <section class="history">
                 <div class="row">
