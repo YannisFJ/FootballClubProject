@@ -138,7 +138,7 @@ a {
 
 .carousel {
   left: 0px;
-  height: 85vh;
+  
   align-items: center;
 }
 
@@ -150,6 +150,7 @@ a {
 .carousel-caption {
     text-shadow: 0 0px 0px #222222;
     color: #222222;
+    max-height: 488px;
 }
 
 .jumbotron-slide {
@@ -208,6 +209,7 @@ a {
 
 .slide1 {
     height: 85vh;
+    width: 100%;
     background: url('../images/ball.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -221,6 +223,7 @@ a {
 
 .slide2 {
     height: 85vh;
+    width: 100%;
     background: url('../images/crowd.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -234,6 +237,7 @@ a {
 
 .slide3 {
     height: 85vh;
+    width: 100%;
     background: url('../images/Yellow.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -247,6 +251,7 @@ a {
 
 .slide4 {
     height: 85vh;
+    width: 100%;
     background: url('../images/corner1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -258,12 +263,23 @@ a {
     justify-content: center;
 }
 
-
-
 .news {
     background-color: gold;
     display: block;
     font-weight: 600;
+}
+
+@media (max-width: 575.98px) {
+    
+    .slide1,
+    .slide3 {
+        background: #222222;
+    }
+    
+    .slide2,
+    .slide4 {
+        background: gold;
+    }
 }
 
 
@@ -342,6 +358,10 @@ a {
     padding-bottom: 40px;
 }
 
+iframe {
+    width: 100%;
+}
+
 /**SUBSCRIBE**/
 
 .subscribe {
@@ -349,6 +369,18 @@ a {
     background: url(../images/passing.jpg) no-repeat center center fixed;
     background-size: cover;
     display: flex;
+}
+
+@media (max-width: 576px) {
+    .subscribe {
+    text-align: center;
+    background: #222222;
+}
+
+.searchsubscribe {
+    width: 130px;
+}
+    
 }
 
 .subscribe-header {
@@ -361,6 +393,21 @@ a {
     margin-top: 0px;
     font-family: 'Oswald';
     display: inline-block;
+}
+
+@media (max-width: 767px) {
+    .subscribe-header {
+    padding-bottom: 20px;
+    padding-top: 40px;
+    text-shadow: 2px 2px black;
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: 'Oswald';
+    display: inline-block;
+}
+    
 }
 
 .subscribe-container {
