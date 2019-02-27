@@ -17,6 +17,7 @@ From a UX/UI perspective, I wanted to easily satisfy the users specific goals wh
 The website is for two different types of users:
 
 1. Existing fans are primarily concerned with news updates, highlights and how to obtain tickets. As such, the most prominent feature when entering the site is a responsive jumbotron that outlines important club news. Furthermore, because users’ eyes are typically drawn to the top left of the screen, I included ‘news’, ‘tickets’ and ‘highlights’ closest to the top left of the navigation bar. This way, people can very quickly identify ways to access the specific content they have come for.
+
 My project also helps existing fans achieve their goals by clearly outlining the sites key features in the navbar, outside of a dropdown menu (above 768px). I picked this approach so that users who come to the site for a specific purpose (like wanting to quickly buy tickets) could instantly identify the relevant place to click.
 
 Each section of the site is also clearly labelled with typography that I believe is very well suited to the site. Due to my chosen colour scheme, it is also very clear when exiting one section and entering another. This helps users clearly identify where they are.
@@ -28,10 +29,15 @@ Additionally, potential fans might also be interested in casually buying tickets
 
 Some user stories:
 •	As an existing fan, I want to effortlessly find the latest news on my team.
+
 •	As an existing fan, I want to be directed to where I can seamlessly find ticket information, to determine if I can attend.
+
 •	As a potential fan, I want to learn more about this club.
+
 •	As a potential fan, I want to know what else the club has to offer besides football.
+
 •	As a potential fan, does this club have any social media accounts?
+
 •	As a potential fan, is there a newsletter I can use to find updates?
 
 Side note:
@@ -56,11 +62,17 @@ In this section, you should go over the different parts of your project, and des
 ## Existing Features
 
 •	Scroll behaviour – I used the CSS ‘scroll-behaviour’ property to implement smooth scrolling for users when they click a section on the navbar.
+
 •	ScrollSpy – I used Bootstraps’ ScrollSpy feature to make it even clearer to the user which section of the website they’re on.
+
 •	Hover – Utilised an aesthetic hover effect for list items on the navbar and footer.
+
 •	Modals – Used modals that are triggered by the ‘search’ button and ‘subscribe’ button, making it clear to the user what the next steps are.
+
 •	Carousel – The carousel in the news section was used to make a better landing page.
+
 •	Responsive text – certain text (e.g. footer and club history) is very responsive. This was to conserve more screen real-estate on smaller devices. For example, the footer says, ‘Follow CSS Wanderers’ on mobile, but ‘Follow CSS Wanderers on social media!’ on larger devices. 
+
 •	_blank Links – All button links open a different tab.
 
 ## Features Left to Implement
@@ -92,16 +104,11 @@ Through testing, I discovered a few problems. There were only two that I haven�
 
 Examples of testing process:
 
-1.	Video Highlights
-i.	Click ‘Video Highlights’ on the navbar
-ii.	After being taken to the highlights section, click on a video at all the different breakpoints and browsers.
-iii.	Try the same thing in landscape mode
+1.	Video Highlights:
+Click ‘Video Highlights’ on the navbar >	After being taken to the highlights section, click on a video at all the different breakpoints and browsers >	Try the same thing in landscape mode
 
 2.	Tickets
-i.	Click ‘Tickets; on the navbar
-ii.	After being taken to the tickets section, see if the ticket information is still consistent on the different breakpoints and browsers. 
-iii.	Check the links still open a different tab.
-iv.	See if the images fail to load on different browsers.
+Click ‘Tickets; on the navbar > After being taken to the tickets section, see if the ticket information is still consistent on the different breakpoints and browsers > Check the links still open a different tab > See if the images fail to load on different browsers.
 
 ## Deployment
 
