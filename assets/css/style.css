@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Roboto', 'exo';
+    font-family: 'Roboto', 'Arial';
     padding-top: 50px;
     position: relative;
+    background-color: #333333;
 }
+
+/**All Sections***/
 
 .container-wrapper {
    padding-top: 30px;
@@ -19,10 +21,28 @@ body {
     padding-top: 20px;
 }
 
-/**general**/
-
 a {
     color: #222222;
+}
+
+.section-header {
+    text-shadow: 1px 1px grey;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 5em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.secondary-header {
+    font-family: 'Exo';
+    margin-top: 0px;
+}
+
+.jumbotron {
+    position: relative;
+    left: 0px;
+    border-radius: 2%;
 }
 
 /**UTILITY**/
@@ -56,25 +76,6 @@ a {
 }
 
 .uppercase {
-    text-transform: uppercase;
-}
-
-.section-header {
-    text-shadow: 1px 1px grey;
-    font-family: 'Oswald';
-    font-weight: 500;
-    font-size: 5em;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.secondary-header {
-    font-family: 'Exo';
-    margin-top: 0px;
-}
-
-.ticket-button {
-    font-family: 'Exo';
     text-transform: uppercase;
 }
 
@@ -153,6 +154,8 @@ a {
     max-height: 488px;
 }
 
+
+
 .jumbotron-slide {
     padding-top: 0px;
 }
@@ -185,26 +188,45 @@ a {
 
 @media (max-width: 575.98px) {
 
-.jumbotron-slide .carousel-jumbotext {
-    font-size: 38px;
-    font-weight: bold;
-    margin-bottom: 15px;
+    .jumbotron-slide .carousel-jumbotext {
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 0px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    
+   /** .jumbotron-slide .carousel-jumbotext a {
+        line-height: 20px;
+        font-size: 20px;
+    }**/
+    
+    .jumbotron-slide .carousel-jumbotextnews {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
     margin-top: 0px;
-    line-height: 49px;
-}
+    line-height: 25px;
+    }
 
    .logo-header {
-    padding-top: 10px;
+        padding-top: 10px;
    }
    
    
     .jumbotron-slide p {
-    margin-bottom: 15px;
-    font-size: 19.5px;
-    font-weight: 400;
-}
+        margin-bottom: 15px;
+        font-size: 19.5px;
+        font-weight: 400;
+    }
 
-} /** end of query**/
+    .carousel-caption {
+        text-shadow: 0 0px 0px #222222;
+        color: #222222;
+        max-height: 488px;
+    }
+
+} 
 
 
 .slide1 {
@@ -280,45 +302,8 @@ a {
     .slide4 {
         background: gold;
     }
+    
 }
-
-
-
-/*****headers****/
-
-
-/**SOCIAL MEDIA ICON COLOR**/
-
-#navbar .nav .dropdown .dropdown-menu li .fa-twitter-square {
-    color: #10CFFE !important;
-}
-
-#navbar .nav .dropdown .dropdown-menu li .fa-facebook-square {
-    color: #3C5A99 !important;
-}
-
-#navbar .nav .dropdown .dropdown-menu li .fa-instagram {
-    color: #E754CA !important;
-}
-
-
-.thumbnail-background1 {
-    background-size: cover;
-}
-
-.jumbotron {
-    position: relative;
-    left: 0px;
-    border-radius: 2%;
-}
-
-.jumbotron-subscribe {
-    width: 70vw;
-    margin-top: 40px;
-    background-color: rgba(192,192,192,0.9);
-}
-
-
 
 
 /**TICKET SECTION**/
@@ -328,7 +313,10 @@ a {
     background-color: gold;
 }
 
-
+.ticket-button {
+    font-family: 'Exo';
+    text-transform: uppercase;
+}
 
 .ticket-wrapper {
     padding-bottom: 40px;
@@ -344,7 +332,7 @@ a {
     display: inline-block;
 }
 
-/**HIGHLIGHTS**/
+/**VIDEO HIGHLIGHTS**/
 
 .container-wrapper-grey {
     background-color: #222222;
@@ -362,25 +350,21 @@ iframe {
     width: 100%;
 }
 
-/**SUBSCRIBE**/
+.caption-video {
+    padding-top: 0px;
+}
+
+#highlight-head {
+    padding-bottom: 100px;
+}
+
+/***SUBSCRIBE SECTION***/
 
 .subscribe {
     text-align: center;
     background: url(../images/passing.jpg) no-repeat center center fixed;
     background-size: cover;
     display: flex;
-}
-
-@media (max-width: 576px) {
-    .subscribe {
-    text-align: center;
-    background: #222222;
-}
-
-.searchsubscribe {
-    width: 130px;
-}
-    
 }
 
 .subscribe-header {
@@ -393,21 +377,6 @@ iframe {
     margin-top: 0px;
     font-family: 'Oswald';
     display: inline-block;
-}
-
-@media (max-width: 767px) {
-    .subscribe-header {
-    padding-bottom: 20px;
-    padding-top: 40px;
-    text-shadow: 2px 2px black;
-    font-weight: 500;
-    font-size: 2em;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    font-family: 'Oswald';
-    display: inline-block;
-}
-    
 }
 
 .subscribe-container {
@@ -424,7 +393,41 @@ iframe {
     text-transform: uppercase;
 }
 
-/***history***/
+.jumbotron-subscribe {
+    width: 70vw;
+    margin-top: 40px;
+    background-color: rgba(192,192,192,0.9);
+}
+
+@media (max-width: 576px) {
+    .subscribe {
+    text-align: center;
+    background: #222222;
+    
+    }
+
+    .searchsubscribe {
+        width: 130px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .subscribe-header {
+    padding-bottom: 20px;
+    padding-top: 40px;
+    text-shadow: 2px 2px black;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: 'Oswald';
+    display: inline-block;
+    }
+    
+}
+
+/***HISTORY SECTION***/
 
 .jumbotron-history p {
     margin-bottom: 15px;
@@ -432,7 +435,7 @@ iframe {
     font-weight: 400;
 }
 
-/**PACKAGES**/
+/**PACKAGES SECTION**/
 
 .packages-button {
     font-family: 'Exo';
@@ -449,11 +452,11 @@ iframe {
 
 @media (max-width: 768px) {
     .packages-header {
-        font-size: 4em;
+    font-size: 4em;
 }
 
     .page-header {
-        text-align: center;
+    text-align: center;
     }
     
 }
@@ -474,21 +477,17 @@ iframe {
     margin-top: 2vh;
 }
 
-
-
 .social-links li a .fa-instagram,
 .social-links li a .fa-snapchat-ghost,
 .social-links li a .fa-twitter,
 .social-links li a .fa-facebook,
-.social-links li a .fa-youtube
-{
+.social-links li a .fa-youtube {
     border: 1px solid black;
 }
 
 .container-wrapper-gold-footer {
-        text-align: center;
+    text-align: center;
 }
-
 
 .footer-text {
     text-align: center;
@@ -528,19 +527,18 @@ iframe {
 }
 
 .social-links li a .fa-twitter {
-background: #10CFFE;
+    background: #10CFFE;
 }
 
 .social-links li a .fa-facebook {
-background: #3C5A99;
+    background: #3C5A99;
 }
 
-/** found the instagram background color online **/
+/*found this instagram background color online*/
 .social-links li a .fa-instagram {
     background: radial-gradient(circle farthest-corner at 35% 90%,#fec564,transparent 50%),radial-gradient(circle farthest-corner at 0 140%,#fec564,transparent 50%),radial-gradient(ellipse farthest-corner at 0 -25%,#5258cf,transparent 50%),radial-gradient(ellipse farthest-corner at 20% -50%,#5258cf,transparent 50%),radial-gradient(ellipse farthest-corner at 100% 0,#893dc2,transparent 50%),radial-gradient(ellipse farthest-corner at 60% -20%,#893dc2,transparent 50%),radial-gradient(ellipse farthest-corner at 100% 100%,#d9317a,transparent),linear-gradient(#6559ca,#bc318f 30%,#e33f5f 50%,#f77638 70%,#fec66d)
 }
 
-/****hover****/
 .social-links li a .fa-youtube:hover {
     background: #333333;
 }
@@ -561,45 +559,56 @@ background: #3C5A99;
     background: #333333;
 }
 
+/**SOCIAL MEDIA ICON COLOR**/
 
-/**HISTORY***/
-
-
-
-/*****VIDEO SECTION *****/
-
-.caption-video {
-    padding-top: 0px;
+#navbar .nav .dropdown .dropdown-menu li .fa-twitter-square {
+    color: #10CFFE !important;
 }
 
-#highlight-head {
-    padding-bottom: 100px;
+#navbar .nav .dropdown .dropdown-menu li .fa-facebook-square {
+    color: #3C5A99 !important;
 }
 
-/**CODE gotten from StackOverflow to create flexbile video in thumbail**/
+#navbar .nav .dropdown .dropdown-menu li .fa-instagram {
+    color: #E754CA !important;
+}
+
+/***modal***/
+
+.modal-body .form-group .col-md-2 .btn a{
+    color: white;
+}
+
+/***VIDEO SECTION VIDEOS***/
+/*The 'flex-video' code below was obtained from StackOverflow to create flexbile video in thumbail*/
 
 
 .flex-video {
-          position: relative;
-          padding-top: 25px;
-          padding-bottom: 67.5%;
-          height: 0;
-          margin-bottom: 16px;
-          overflow: hidden;
-           }
+position: relative;
+padding-top: 25px;
+padding-bottom: 67.5%;
+height: 0;
+margin-bottom: 16px;
+overflow: hidden;
+}
 
-          .flex-video.widescreen { padding-bottom: 57.25%; }
-          .flex-video.vimeo { padding-top: 0; }
+.flex-video.widescreen { 
+    padding-bottom: 57.25%; 
+}
 
-          .flex-video iframe,
-          .flex-video object,
-          .flex-video embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-          }
+.flex-video.vimeo { 
+    padding-top: 0; 
+}
+
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
  @media only screen and (max-device-width: 800px),  
  only screen and (device-width:1024px) and (device-height: 600px), only screen 
@@ -608,11 +617,8 @@ background: #3C5A99;
 
  and (device-width: 800px), only screen and (max-width: 767px) {
 
- .flex-video { padding-top: 0; }
-   }
-
-/***modal**/
-
-.modal-body .form-group .col-md-2 .btn a{
-    color: white;
+    .flex-video { 
+     padding-top: 0; 
+    }
+     
 }
