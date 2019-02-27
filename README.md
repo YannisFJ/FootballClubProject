@@ -28,6 +28,7 @@ Each button, if clicked on, will load a separate tab that has the relevant servi
 Additionally, potential fans might also be interested in casually buying tickets. This is why I designed the ‘tickets’ section to have all upcoming matches, coupled with the date of each one immediately available. This means the interested users can quickly ascertain which match would be best for their schedule. 
 
 Some user stories:
+
 •	As an existing fan, I want to effortlessly find the latest news on my team.
 
 •	As an existing fan, I want to be directed to where I can seamlessly find ticket information, to determine if I can attend.
@@ -100,6 +101,7 @@ This site was tested across several browsers, including Chrome, FireFox and Safa
 Through testing, I discovered a few problems. There were only two that I haven’t yet addressed:
 
 •	The smooth scrolling effect did not work on Safari
+
 •	In the subscription section, if you don’t enter a correct value (email address) then there will be an error message. However, the bug is that the ‘confirmation’ modal will still appear if you click the button. 
 
 Examples of testing process:
