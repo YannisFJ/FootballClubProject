@@ -1,6 +1,6 @@
 # CSS Wanderers FC 
 
-Milestone Project 1: User-Centric Frontend Development 
+**Milestone Project 1: User-Centric Frontend Development**
 
 The website I have created is for a fictional football team, which I have named CSS Wanderers FC. Throughout development, the site went through different iterations but always stuck to the same basic principle – to provide relevant content for existing and potential fans. 
 Consequently, news, tickets, and video highlights were among the more important priorities.
@@ -16,15 +16,15 @@ A live demo can be found here: https://yannisfj.github.io/FootballClubProject/
 
 From a UX/UI perspective, I wanted to easily satisfy the users specific goals whilst having a visually appealing design. The final layout followed the premise of my original wireframe, but I decided to cut out certain features (e.g. the ‘player rating’ carousel) for the sake of a cleaner and simpler site.
 
-The website is for two different types of users:
+**The website is for two different types of users:**
 
-1. Existing fans are primarily concerned with news updates, highlights and how to obtain tickets. As such, the most prominent feature when entering the site is a responsive jumbotron that outlines important club news. Furthermore, because users’ eyes are typically drawn to the top left of the screen, I included ‘news’, ‘tickets’ and ‘highlights’ closest to the top left of the navigation bar. This way, people can very quickly identify ways to access the specific content they have come for.
+1. **Existing fans** are primarily concerned with news updates, highlights and how to obtain tickets. As such, the most prominent feature when entering the site is a responsive jumbotron that outlines important club news. Furthermore, because users’ eyes are typically drawn to the top left of the screen, I included ‘news’, ‘tickets’ and ‘highlights’ closest to the top left of the navigation bar. This way, people can very quickly identify ways to access the specific content they have come for.
 
 My project also helps existing fans achieve their goals by clearly outlining the sites key features in the navbar, outside of a dropdown menu (above 768px). I picked this approach so that users who come to the site for a specific purpose (like wanting to quickly buy tickets) could instantly identify the relevant place to click.
 
 Each section of the site is also clearly labelled with typography that I believe is very well suited to the site. Due to my chosen colour scheme, it is also very clear when exiting one section and entering another. This helps users clearly identify where they are.
 
-2. I wanted new users to receive a brief overview of the club’s history and opportunities such as stadium tours or venue hire. This way, they would understand the clubs’ ethos and what we can do for them. In the ‘Membership & Events’ section, I provided an attractive-looking and simple overview of the services on offer.
+2. I wanted **new users** to receive a brief overview of the club’s history and opportunities such as stadium tours or venue hire. This way, they would understand the clubs’ ethos and what we can do for them. In the ‘Membership & Events’ section, I provided an attractive-looking and simple overview of the services on offer.
 
 <img width="1200" alt="membership section" src="https://user-images.githubusercontent.com/44097978/53532455-dadc2a00-3aee-11e9-8abc-fd6540173ad0.png">
 
@@ -53,32 +53,30 @@ https://github.com/YannisFJ/milestone-project/tree/master/wireframes
 
 ### Technologies Used
 
-1. HTML5 – used to write my site: https://www.w3.org/html/
+1. **HTML5** – used to write my site: https://www.w3.org/html/
 
-2. CSS – used to customise my site and make it responsive: https://www.w3.org/Style/CSS/
+2. **CSS** – used to customise my site and make it responsive: https://www.w3.org/Style/CSS/
 
-3. Bootstrap (3.3.7) – used for great features and modern look. Carousel, thumbnails, scrollSpy and modals were made possible: https://getbootstrap.com/docs/3.3/css/
+3. **Bootstrap (3.3.7)** – used for great features and modern look. Carousel, thumbnails, scrollSpy and modals were made possible: https://getbootstrap.com/docs/3.3/css/
 
 
 ### Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
-
 ## Existing Features
 
-•	Scroll behaviour – I used the CSS ‘scroll-behaviour’ property to implement smooth scrolling for users when they click a section on the navbar.
+•	**Scroll behaviour** – I used the CSS ‘scroll-behaviour’ property to implement smooth scrolling for users when they click a section on the navbar.
 
-•	ScrollSpy – I used Bootstraps’ ScrollSpy feature to make it even clearer to the user which section of the website they’re on.
+•	**ScrollSpy** – I used Bootstraps’ ScrollSpy feature to make it even clearer to the user which section of the website they’re on.
 
-•	Hover – Utilised an aesthetic hover effect for list items on the navbar and footer.
+•	**Hover** – Utilised an aesthetic hover effect for list items on the navbar and footer.
 
-•	Modals – Used modals that are triggered by the ‘search’ button and ‘subscribe’ button, making it clear to the user what the next steps are.
+•	**Modals** – Used modals that are triggered by the ‘search’ button and ‘subscribe’ button, making it clear to the user what the next steps are.
 
-•	Carousel – The carousel in the news section was used to make a better landing page.
+•	**Carousel** – The carousel in the news section was used to make a better landing page.
 
-•	Responsive text – certain text (e.g. footer and club history) is very responsive. This was to conserve more screen real-estate on smaller devices. For example, the footer says, ‘Follow CSS Wanderers’ on mobile, but ‘Follow CSS Wanderers on social media!’ on larger devices. 
+•	**Responsive text** – certain text (e.g. footer and club history) is very responsive. This was to conserve more screen real-estate on smaller devices. For example, the footer says, ‘Follow CSS Wanderers’ on mobile, but ‘Follow CSS Wanderers on social media!’ on larger devices. 
 
-•	_blank Links – All button links open a different tab.
+•	**_blank Links** – All button links open a different tab.
 
 ## Features Left to Implement
 
