@@ -10,6 +10,8 @@ Consequently, news, tickets, and video highlights were among the more important 
  
 A live demo will be found in this section
 
+![screenshot 2019-02-26 at 12 46 00](https://user-images.githubusercontent.com/44097978/53532323-59849780-3aee-11e9-9c66-05cd27032e35.png)
+
 ## UX
 
 From a UX/UI perspective, I wanted to easily satisfy the users specific goals whilst having a visually appealing design. The final layout followed the premise of my original wireframe, but I decided to cut out certain features (e.g. the ‘player rating’ carousel) for the sake of a cleaner and simpler site.
