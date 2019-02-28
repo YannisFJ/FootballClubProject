@@ -121,7 +121,7 @@ Through testing, I discovered a few problems. There were only ones I haven’t y
 
 Example of testing process:
 
-Click ‘Tickets; on the navbar > After being taken to the tickets section, see if the ticket information is still consistent on the different breakpoints and browsers > Check the links still open a different tab > See if the images fail to load on different browsers.
+Click ‘Tickets' on the navbar > After being taken to the tickets section, see if the ticket information is still consistent on the different breakpoints and browsers > Check the links still open a different tab > See if the images fail to load on different browsers.
 
 ## Deployment
 
