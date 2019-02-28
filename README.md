@@ -110,18 +110,17 @@ This site was tested across several browsers, including Chrome, FireFox and Safa
 
 # Bugs:
 
-Through testing, I discovered a few problems. There were only two that I haven’t yet addressed:
+Through testing, I discovered a few problems. There were only ones I haven’t yet addressed:
 
 •	The smooth scrolling effect did not work on Safari
 
 •	In the subscription section, if you don’t enter a correct value (email address) then there will be an error message. However, the bug is that the ‘confirmation’ modal will still appear if you click the button. 
 
-Examples of testing process:
+• The search bar is for display purposes only
 
-1.	Video Highlights:
-Click ‘Video Highlights’ on the navbar >	After being taken to the highlights section, click on a video at all the different breakpoints and browsers >	Try the same thing in landscape mode
 
-2.	Tickets
+Example of testing process:
+
 Click ‘Tickets; on the navbar > After being taken to the tickets section, see if the ticket information is still consistent on the different breakpoints and browsers > Check the links still open a different tab > See if the images fail to load on different browsers.
 
 ## Deployment
