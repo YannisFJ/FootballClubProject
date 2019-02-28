@@ -86,11 +86,11 @@ For my next project I am excited to add more functional features, such as the po
 
 ## Testing
 
-The existing and “potential” fan user stories achieved my intended outcome of providing easy access to tickets, highlights, news and showcasing the history of the club. In the carousel section, they can read (and click on) all the latest headlines, regardless of device. If they are viewing on mobile, then the background will be the club’s famous gold colour scheme. 
+The existing and “potential” fan user stories achieved my intended outcome of providing easy access to tickets, highlights, news and showcasing the history of the club. In the carousel section, they can read (and click on) all the latest headlines, regardless of device. If they are viewing on mobile, then the background will be the club’s famous gold colour scheme:
 
-![screenshot 2019-02-26 at 22 59 51](https://user-images.githubusercontent.com/44097978/53532562-39a1a380-3aef-11e9-9543-8c8c6cb9ee3b.png)
+![image](https://user-images.githubusercontent.com/44097978/53533091-5fc84300-3af1-11e9-95a9-4190ca393cd0.png)
 
-If viewed on desktop, this section has a nice background of a football pitch. 
+If viewed on desktop, this section has a nice background of a football pitch:
 
 ![screenshot 2019-02-27 at 14 31 19](https://user-images.githubusercontent.com/44097978/53532834-5e4a4b00-3af0-11e9-9923-abf4ddbb5db3.png)
 
