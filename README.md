@@ -8,7 +8,7 @@ Consequently, news, tickets, and video highlights were among the more important 
  
 ## Demo
  
-A live demo will be found in this section
+A live demo can be found here: https://yannisfj.github.io/FootballClubProject/
 
 ![screenshot 2019-02-26 at 12 46 00](https://user-images.githubusercontent.com/44097978/53532323-59849780-3aee-11e9-9c66-05cd27032e35.png)
 
@@ -125,7 +125,7 @@ Click ‘Tickets' on the navbar > After being taken to the tickets section, see 
 
 ## Deployment
 
-The CSS Wanderers website is hosted on GitHub pages, deployed directly from the master branch. As such, it will automatically update if there are new commits to the aformentioned branch. If you want to run the site locally, you can clone this repository directly into an editor by pasting git clone https://github.com/YannisFJ/milestone-project.git into your terminal.
+The CSS Wanderers website is hosted on GitHub pages, deployed from the master branch. As such, it will automatically update if there are new commits to the aformentioned branch. If you want to run the site locally, you can clone this repository by pasting git clone https://github.com/YannisFJ/FootballClubProject.git into your terminal.
 
 ## Credits
 
