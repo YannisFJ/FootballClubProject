@@ -26,6 +26,8 @@ Each section of the site is also clearly labelled with typography that I believe
 
 2. I wanted new users to receive a brief overview of the club’s history and opportunities such as stadium tours or venue hire. This way, they would understand the clubs’ ethos and what we can do for them. In the ‘Membership & Events’ section, I provided an attractive-looking and simple overview of the services on offer.
 
+<img width="1200" alt="membership section" src="https://user-images.githubusercontent.com/44097978/53532455-dadc2a00-3aee-11e9-8abc-fd6540173ad0.png">
+
 Each button, if clicked on, will load a separate tab that has the relevant service.
 Additionally, potential fans might also be interested in casually buying tickets. This is why I designed the ‘tickets’ section to have all upcoming matches, coupled with the date of each one immediately available. This means the interested users can quickly ascertain which match would be best for their schedule. 
 
@@ -84,11 +86,19 @@ For my next project I am excited to add more functional features, such as the po
 
 ## Testing
 
-The existing and “potential” fan user stories achieved my intended outcome of providing easy access to tickets, highlights, news and showcasing the history of the club. In the carousel section, they can read (and click on) all the latest headlines, regardless of device. If they are viewing on mobile, then the background will be the club’s famous gold colour scheme. If viewed on desktop, this section has a nice background of a football pitch. 
+The existing and “potential” fan user stories achieved my intended outcome of providing easy access to tickets, highlights, news and showcasing the history of the club. In the carousel section, they can read (and click on) all the latest headlines, regardless of device. If they are viewing on mobile, then the background will be the club’s famous gold colour scheme. 
+
+![screenshot 2019-02-26 at 22 59 51](https://user-images.githubusercontent.com/44097978/53532562-39a1a380-3aef-11e9-9543-8c8c6cb9ee3b.png)
+
+If viewed on desktop, this section has a nice background of a football pitch. 
+
+![screenshot 2019-02-27 at 14 31 19](https://user-images.githubusercontent.com/44097978/53532834-5e4a4b00-3af0-11e9-9923-abf4ddbb5db3.png)
 
 Users are also able to find social media links by clicking on the icons in either the navbar (top right) or footer. All links to social media change colour when hovered on. This essentially acts as feedback to let the user know that the link is functional. Furthermore, I used “target=_blank” for all links.
 
-Users are also able to easily catch up on video highlights, which I have tested thoroughly. During development, there was a problem that meant videos wouldn’t show up on smaller devices. I later realised this was due to my own inline-styling and rectified the problem. Now, videos can play on any resolution. Here is an image of all 4 videos being played simultaneously (not that any sane person would do this:
+Users are also able to easily catch up on video highlights, which I have tested thoroughly. During development, there was a problem that meant videos wouldn’t show up on smaller devices. I later realised this was due to my own inline-styling and rectified the problem. Now, videos can play on any resolution. Here is an image of all 4 videos being played simultaneously (not that any sane person would do this):
+
+![screenshot 2019-02-27 at 14 50 51](https://user-images.githubusercontent.com/44097978/53532512-0b23c880-3aef-11e9-8350-11c6363990af.png)
 
 They are able to learn the history of the club in the ‘club history’ section and can click on a link that will take them to learn more. 
 
